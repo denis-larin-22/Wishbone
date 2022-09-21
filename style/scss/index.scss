@@ -1,0 +1,213 @@
+@import "./reset";
+@import "./tools";
+@import "./common";
+
+.header {
+    background-color: $white;
+    padding: 0 $cont-spase-lg;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    &-wrap {
+        max-width: 1148px + ($cont-spase-lg * 2);
+        @extend %cont-center;
+        padding: 22px 0;
+    }
+    &__navigation {
+        gap: 32px;
+    }
+    &__link {
+        color: $black-text;
+        &:hover {
+            color: $brown-dark;
+        }
+    }
+    &__btn {
+        padding: 11px 20px;
+        border-color: $black-text;
+        border-radius: 14px;
+        background-color: $black-text;
+        color: $white;
+        letter-spacing: 0.4px;
+        transition: 0.5s ease;
+        &:hover {
+            background-color: $white;
+            color: $black-text;
+        }
+    }
+}
+
+.main {
+    background-color: $brown-light;
+    color: $black-text;
+    &-wrap {
+        max-width: 1440px + ($cont-spase-lg * 2);
+        padding: 0 $cont-spase-lg;
+        @extend %cont-center;
+        overflow: hidden;
+    }
+    &__content {
+        max-width: 509px;
+        padding: 137px 0 128px 100px;
+    }
+    &__h4 {
+        color: $brown-caps;
+        padding-bottom: 20px;
+    }
+    &__h1 {
+        @include font-setting (400, 64px, 70px);
+        padding-bottom: 18px;
+    }
+    &__text {
+        color: $brown-dark;
+        padding-bottom: 41px;
+    }
+    &__link {
+        color: $black-text;
+        padding-left: 25px;
+        &:hover {
+            color: $brown-dark;
+        }
+    }
+    // &__img {
+    //     object-fit: cover;
+    //     object-position: center; 
+    // }
+}
+
+.description {
+    background-color: $white;
+    &-wrap {
+        max-width: 760px + ($cont-spase-lg * 2);
+        @extend %cont-center;
+        color: $brown-dark;
+        padding: 100px $cont-spase-lg 128px $cont-spase-lg;
+    }
+    &__h3 {
+        @include font-setting (400, 32px, 38px); 
+    }
+    &__text {
+        max-width: 493px;
+        &:nth-child(3) {
+            padding-bottom: 18px;
+        }
+    }
+}
+
+.person {
+    &__info {
+        padding-left: 30px;
+    }
+}
+
+.example {
+    color: $brown-dark;
+    background-color: $white;
+    &-wrap {
+        max-width: 1440px + ($cont-spase-lg * 2);
+        padding: 0 $cont-spase-lg;
+        @extend %cont-center;
+        background-image: url("../../assets/second-bcg.png");
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // background-attachment: fixed;
+        &_second {
+            background-image: url("../../assets/third-bcg.png");
+        }
+        &_third {
+            background-image: url("../../assets/forth-bcg.png");
+        }
+    }
+    &__content {
+        max-width: 285px;
+    }
+}
+
+.process {
+    background-color: $white;
+    &-wrap {
+        max-width: 1200px + ($cont-spase-lg * 2);
+        padding: 100px $cont-spase-lg 110px $cont-spase-lg;
+        @extend %cont-center;
+        text-align: center;
+    }
+    &__h3 {
+        color: $brown-dark;
+        padding-bottom: 13px;
+    }
+    &__h2 {
+        color: $black-text;
+        @include font-setting (400, 39px, 42px);
+        padding-bottom: 47px;
+    }
+}
+
+.card {
+    border: none;
+}
+
+.clients {
+    background-color: $brown-dark;
+    &-wrap {
+        max-width: 1168px + ($cont-spase-lg * 2);
+        padding: 100px $cont-spase-lg 110px $cont-spase-lg;
+        @extend %cont-center;
+    }
+    &__content {
+        color: $white;
+        max-width: 451px;
+    }
+    &__h2 {
+        @include font-setting (400, 32px, 38px);
+    }
+    &__logo-set {
+        gap: 90px;
+    }
+}
+
+.projects {
+    background-color: #F7F7F7;
+    &-wrap {
+        max-width: 1168px + ($cont-spase-lg * 2);
+        padding: 100px $cont-spase-lg 110px $cont-spase-lg;
+        @extend %cont-center;
+    }
+    &__h2 {
+        @include font-setting (400, 39px, 42px);
+        color: $black-text;
+    }
+    &__h3 {
+        @include font-setting (400, 24px, 30px);
+        color: #645C55;
+        max-width: 581px;
+    }
+    &__title {
+        width: 30%;
+        min-height: 456px;
+        
+    }
+}
+
+.title {
+    position: relative;
+    &__content {
+        position: absolute;
+        top: 0;
+        padding: 40px;
+    }
+    &__h4 {
+        color: $brown-caps;   
+    }
+    &__h3 {
+        @include font-setting (400, 23px, 30px);
+    }
+    &__link {
+        padding: 11px 20px;
+        background-color: $black-text;
+        border-radius: 14px;
+        color: $white;
+    }
+}
+

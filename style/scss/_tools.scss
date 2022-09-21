@@ -1,0 +1,72 @@
+// colors 
+
+$brown-light: #ECE7E4;
+$brown-dark: #403E3B;
+$brown-medium: #CEC4BC;
+$brown-caps: #645C55;
+
+$black-text: rgba(27, 26, 26, 1);
+
+$light-bcg: #E5E5E5;
+
+$white:rgba(255, 255, 255, 1);
+
+//breakpoints 
+
+$exsm: 576px;
+$sm: 768px;
+$md: 1024px;
+$lg: 1440px;
+$exlg: 1920px;
+
+// container 
+
+$cont-spase-lg: 20px;
+$cont-space-sm: 10px;
+
+%cont-center {
+    margin: 0 auto;
+}
+
+//screen resolution for containers
+
+$container-space-lg: 20px;
+$container-space-sm: 15px; 
+
+// mixins
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}
+
+// padding, margin
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pb90 {
+    padding-bottom: 90px;
+}
+
+// grid-layout
+.coll-wrap {
+    margin: 0 -10px;
+}
+.coll-lg-3 {
+    flex: 0 0 auto;
+    width: 27%;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: $sm) {
+    .coll-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
