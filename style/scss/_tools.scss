@@ -33,11 +33,15 @@ $cont-space-sm: 10px;
 $container-space-lg: 20px;
 $container-space-sm: 15px; 
 
-// mixins
+// mixins, samples
 @mixin font-setting ($w, $s, $l) {
     font-weight: $w;
     font-size: $s;
     line-height: $l;
+}
+
+%animation-hover {
+    transition: 0.5s ease;
 }
 
 // padding, margin
@@ -51,6 +55,10 @@ $container-space-sm: 15px;
 
 .pb90 {
     padding-bottom: 90px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
 }
 
 // grid-layout

@@ -25,3 +25,15 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.chapter-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.container {
+    max-width: 1168px + ($cont-spase-lg * 2);
+    padding: 100px $cont-spase-lg 110px $cont-spase-lg;
+    @extend %cont-center;
+}
